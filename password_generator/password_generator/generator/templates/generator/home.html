@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<body style="background-color: #9900ff;">
+    <br>
+    <br>
+    <br>
+    <div class="container text-center">
+        <h1>პაროლის გენერატორი</h1>
+        <form action="{% url 'password' %}">
+            <div class="input-group">
+              <select class="custom-select" name="length">
+                  <option value="6"> 6 სიმბოლო</option>
+                  <option value="7"> 7 სიმბოლო</option>
+                  <option value="8"> 8 სიმბოლო</option>
+                  <option value="9"> 9 სიმბოლო</option>
+                  <option value="10"> 10 სიმბოლო</option>
+                  <option value="11"> 11 სიმბოლო</option>
+                  <option value="12"> 12 სიმბოლო</option>
+                  <option value="13"> 13 სიმბოლო</option>
+                  <option value="14"> 14 სიმბოლო</option>
+                  <option value="15"> 15 სიმბოლო</option>
+                  <option value="16"> 16 სიმბოლო</option>
+                  <option value="17"> 17 სიმბოლო</option>
+                  <option value="18"> 18 სიმბოლო</option>
+                  <option value="19"> 19 სიმბოლო</option>
+                  <option value="20"> 20 სიმბოლო</option>
+                  <option value="21"> 21 სიმბოლო</option>
+                  <option value="22"> 22 სიმბოლო</option>
+                  <option value="23"> 23 სიმბოლო</option>
+                  <option value="24"> 24 სიმბოლო</option>
+                  <option value="25"> 25 სიმბოლო</option>
+              </select>
+                <div class="input-group-append">
+                    <label class="input-group-text" for="inputGroupSelect02"> სიგრძე </label>
+                </div>
+            </div>
+            </select>
+            <br>
+            <input type="checkbox" name="uppercase" class="input-group-addon"> აფერქეისი
+            <br>
+            <input type="checkbox" name="numbers">    რიცხვები
+            <br>
+            <input type="checkbox" name="special"> სპეცობები
+            <br>
+            <br>
+            <button
+                type="submit" class="btn btn-primary btn-lg" id="first" formaction="{% url 'password' %}"> დააგენერირე პაროლი
+            </button>
+            <button
+                type="submit" class="btn btn-secondary btn-lg" formaction="{% url 'about' %}">   გვერდის შესახებ
+            </button>
+        </form>
+    </div>
+</body>
